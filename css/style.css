@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dado{
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: white;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; 
+}
+.punto{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: black;
+}
+.fila{
+    width: 100%;
+    display: flex;
+}
+.one {
+    justify-content: center;
+    align-items: center;
+}
+.two{
+    justify-content: space-between;
+}
+.two .fila:nth-child(1){
+    justify-content: flex-start;
+}
+.two .fila:nth-child(2){
+    justify-content: flex-end;
+}
+.three .fila:nth-child(1) {
+    justify-content: flex-end;
+}
+.three .fila:nth-child(2) {
+    justify-content: center;
+}
+.four .fila{
+    justify-content: space-between;
+}
+.five .fila:nth-child(1), .five .fila:nth-child(3){
+    justify-content: space-between;
+}
+.five .fila:nth-child(2){
+    justify-content: center;
+}
+.six .fila {
+    justify-content: space-between;
+}
